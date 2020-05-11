@@ -1,0 +1,15 @@
+phi=linspace(0,2*pi,100);
+r=phi.^(-1);
+x=r.*cos(phi);
+y=r.*sin(phi);
+plot(x,y);
+grid on;
+xlabel('x');
+ylabel('f(x)');
+title('graphics');
+hold on;
+n=2;
+m=2;
+x=cos(phi.*n).*(cos(phi)).^m;
+y=sin(phi.*n).*(sin(phi)).^m;
+plot(x,y,'Color','r');
